@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dashboard_background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvbushebaapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Busaheba App"
+        android:textSize="20sp"
+        android:textColor="@color/darkpurple"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+     <ImageView
+         android:id="@+id/leftimg"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         android:src="@color/darkpurple"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="15dp"
+         android:layout_marginTop="15dp"
+
+         />
+    <ImageView
+        android:id="@+id/rigthimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/darkpurple"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        />
+       <RelativeLayout
+           android:id="@+id/ll1"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@color/lightbpink"
+           android:layout_below="@+id/leftimg"
+           android:layout_marginTop="10dp"
+           android:paddingLeft="15dp"
+           >
+           <ImageView
+               android:id="@+id/userimag"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:src="@color/darkpurple"
+               android:layout_centerVertical="true"
+               />
+              <LinearLayout
+                  android:id="@+id/ll1a"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_toRightOf="@id/userimag"
+                  android:layout_marginLeft="10dp"
+                  >
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:layout_weight="0.8"
+                       android:layout_gravity="center_vertical"
+                       >
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Tasneem Sk.Aliasger Poonamwala"
+                           />
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             >
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_height="wrap_content"
+                                 android:text="30376456"
+                                 android:textColor="@color/darkpurple"
+                                 android:layout_weight="0.9"
+                                 />
+                                 <ImageView
+                                     android:layout_width="0dp"
+                                     android:layout_height="match_parent"
+                                     android:src="@color/darkpurple"
+                                     android:layout_weight="0.1"
+                                     />
+
+                         </LinearLayout>
+
+                   </LinearLayout>
+                  <RelativeLayout
+                      android:id="@+id/settingicon"
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:layout_weight="0.2"
+                      android:layout_gravity="center_vertical"
+                      >
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@color/darkpurple"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                  </RelativeLayout>
+              </LinearLayout>
+
+
+
+
+
+       </RelativeLayout>
+
+
+
+     <TextView
+         android:id="@+id/tv1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Monday | 5th Shawwal at Mukarram 1442 |16th May 2021"
+         android:layout_below="@+id/ll1"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday | 5th Shawwal at Mukarram 1442 |16th May 2021"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/lightbpink"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        />
+
+       <RelativeLayout
+           android:id="@+id/ll2"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_below="@id/tv2"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="10dp"
+           >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="15dp"
+                            />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:text="Little me"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Little me"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Little me"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Little me"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Little me"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+       </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll2"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
